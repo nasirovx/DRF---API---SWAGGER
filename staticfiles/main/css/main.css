@@ -1,0 +1,43 @@
+.content{
+    background-color: #fefdfd;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 5px rgb(213, 211, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+body{
+    background-color: rgb(248, 243, 243);
+}
+main{
+    width: 1300px;
+    display: flex;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px;
+}
+.title{
+    text-align: center;
+}
+nav{
+    width: 1300px;
+    padding-left: 60px;
+    display: flex;
+}
+.navbar{
+    height: 10vh;
+}
+.navbar a{
+    color: rgb(255, 116, 10);
+    font-size: 22px;
+    padding-left: 50px;
+}
+form{
+    width: 500px;
+    margin-left: 500px;
+    padding-top: 20px;
+}

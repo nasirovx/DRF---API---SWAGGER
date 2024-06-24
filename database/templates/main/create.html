@@ -1,0 +1,18 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+    <h1 class='title'>Форма для добавление статьи</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.title}}<br>
+        {{form.content}}<br>
+        {{form.is_published}}<br>
+        {{form.cat}}<br>
+        <span>{{error}}</span>
+        <button class="btn btn-success" type="submit">Добавить статью</button>
+    </form>
+{% endblock %}

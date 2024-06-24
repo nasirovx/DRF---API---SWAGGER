@@ -1,0 +1,18 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+    <h1 class='title'>Главная страница</h1>
+    <main>
+    {% for person in people %}
+            <div class="content">
+                <h1>{{ person.title }}</h1>
+                <p>{{ person.content }}</p>
+                <p>{{ person.time_create }}</p>
+            </div>
+    {% endfor %}
+</main>
+{% endblock %}
